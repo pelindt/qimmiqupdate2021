@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/Chart.js"></script>
+<script src="js/beta/calculations.js"></script>
+<script src="js/beta/helpers.js"></script>
+<link href="css/beta/main.css" rel="stylesheet" />
+<title>qimmiq2</title>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row dropzone-row">
+    <div class="col-xs-12" id="drop_zone">Drop files here</div>
+  </div>
+
+  <div class="graph_utils">
+  <div class="row slide-divider">
+    <div class="slide-content" contenteditable="true">
+      <div class="">
+        <h1>Your customers use more than one device before converting</h1>
+        <h3><span id="fsjhth"></span>% of your Google Ads conversions involved multiple devices</h3>
+      </div>
+      <div class="textbox">
+        <table>
+        <tr>
+          <td class="left-graph">
+            <canvas id="crossDeviceConvBasedOnImpr"></canvas>
+            <canvas id="crossDeviceConvBasedOnClicks"></canvas>
+          </td>
+          <td class="right-text">
+            <h5>Move beyond last-click in-device attribution in Google Ads</h5>
+            <p>Customer journeys are becoming harder to measure and to optimize for as consumers increasingly move between devices before converting. </p>
+            <p>Just look at your Google Ads conversion data on the left: <b><span id="jkdgfwr"></span>% of your conversions involved movement between multiple devices before the conversion happened! </b></p>
+            <p>For <span id="srtzjj"></span>% of conversions, customers even clicked on at least one Google Ads Search ad on another device than the device they converted on.</p>
+            <p>All this cross-device behavior breaks traditional last-click attribution and often causes certain upper funnel media (like generic or mobile search ads) to be undervalued. </p> 
+            <p><b>As a result, you could end up with bids and budgets that do not reflect the actual opportunity for your business.</b></p>
+          </td>
+        </tr>
+        </table>    
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row slide-divider">
+    <div class="slide-content" contenteditable="true">
+      <div class="">
+        <h1>Customer Journeys are complex and non-linear</h1>
+        <h3><span id="rtdfhgj"></span>% of your cross-device conversions end on a different device type than where they started</h3>
+      </div>
+      <div class="textbox">
+        <table>
+        <tr>
+          <td class="left-graph">
+            <canvas id="firstAndConvertingDevice"></canvas>
+          </td>
+          <td class="right-text">
+            <h5>Adapt to changes in consumer behavior</h5>
+            <p>Customer journeys are no longer a relatively predictable series of touch-points. In fact: with an <b>average device path length of <span id="otfztgb"></span> devices there are <span id="oplikugh"></span> unique cross-device paths</b> that have lead to conversions! </p>
+            <p>Out of these cross-device conversions, <b><span id="luhftjg"></span>% ended on a different device type than where they started.</b> </p>
+            <p>This highlights the importance of making sure that your ads are visible at all the moments that matter, not just at the moment when the conversion happens.</p>
+            <p>Holistic and device agnostic measurement, attribution and optimization are required to cope with changes in consumer behavior (like the rise of mobile as a key device in the customer journey). </p> 
+          </td>
+        </tr>
+        </table>    
+      </div>
+    </div>
+  </div>
+
+  <div class="row slide-divider">
+    <div class="slide-content" contenteditable="true">
+      <div class="">
+        <h1>Mobile plays a key role at all stages of the customer journey</h1>
+        <h3 id="cvdtrjh"></h3>
+      </div>
+      <div class="textbox">
+        <table>
+        <tr>
+          <td class="top-graph">
+            <canvas id="mobileUsage"></canvas>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td class="left-text-text top-align">
+                  <p>More and more customers now convert on mobile devices (<span id="uzkfjdgh"></span>% of conversions happen on mobile). They also use their mobile devices at other stages of the customer journey. For cross-device journeys, <b><span id="asfrwg"></span>% start with a mobile ad click and <span id="bnghfmt"></span>% of these journeys contain at least 1 mobile ad click.</b> <span id="dsjergds"></span></p>
+                  <table>
+                    <tr>
+                      <td class="key-num"><span id="ebfsuvif"></span></td>
+                      <td class="key-text"><span id="ebfsuvid"></span></td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="right-text-text top-align">
+                  <p>If we compare the number of conversions that happened on a device to the number of conversions that device assisted (the number of conversions that involved a click on the device before the converting click) we can understand the roles of different device types. </p>
+                  <p><span id="vdsthhs"></span></p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        </table>    
+      </div>
+    </div>
+  </div>
+
+  <div class="row slide-divider">
+    <div class="slide-content" contenteditable="true">
+      <div class="">
+        <h1>Optimize Google Ads performance with a future-proof attribution model</h1>
+        <h3 id="ncasrfg"></h3>
+      </div>
+      <div class="textbox">
+        <table>
+        <tr>
+          <td class="left-graph">
+            <canvas id="attributionModels"></canvas>
+          </td>
+          <td class="right-text">
+            <h5>Give credit where credit is due</h5>
+            <p>If you give credit based on where conversions happen (the last-device), desktop gets credit for <span id="psligjk"></span>% of cross-device conversions. In contrast, if you give credit based on the first device in the customer journey (a first-device model), that would <span id="iojaweg"></span>.</p>
+            <p><b>This comparison shows just how flawed the most commonly used attribution models are</b>. They give full credit to just one touchpoint. </p>
+            <p>To be future-proof, you need a model that can distribute credit to multiple touchpoints across devices based on their actual contribution to a conversion. Only then can you successfully optimize performance across devices.</p>
+          </td>
+        </tr>
+        <tr>
+          <table>
+            <tr>
+              <td class="key-num">
+                <span id="hadfsjk"></span>%
+              </td>
+              <td class="key-text">
+                Credit allocation to Mobile, depending on model
+              </td>
+              <td class="key-num">
+                <span id="eorwilbj"></span>%
+              </td>
+              <td class="key-text">
+                Credit allocation to Desktop, depending on model
+              </td>
+            </tr>
+          </table>
+        </tr>
+        </table>    
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row slide-divider">
+    <div class="slide-content" contenteditable="true">
+      <div class="">
+        <h1>Recommendations</h1>
+        <h3>Things you can do today to improve Google Ads performance across devices</h3>
+      </div>
+      <div class="textbox">
+        <table>
+        <tr>
+          <td class="left-text-text">
+            <h5>Reporting and Attribution</h5>
+            <p>Google Ads now allows you to select an attribution model for every conversion action you define. By default though, it reports conversions based on a last-click model.</p>
+            <p><b>Start by including cross-device conversions in the conversions column</b> in Google Ads if you have not yet done so. Next, <b>select an attribution model that is able to give fractional credit to touchpoints across devices</b> (the Data Driven Attribution Model is the best and most advanced option).</p>
+            <p>Now, conversion data in Google Ads will start to better reflect the contribution of every ad click to the overall performance of your account(s).</p>
+            <h5><a href="https://goo.gl/nkwi69" target="_blank">1. Include Cross-Device conversions in the conversions column in Google Ads</a></h5>
+            <h5><a href="https://goo.gl/27m11c" target="_blank">2. Change your attribution model in Google Ads to a Data Driven Model</a></h5>
+          </td>
+          <td class="right-text-text">
+            <h5>Bids, Budgets and Targets</h5>
+            <p>Next, start to optimize your Google Ads Search bids, budgets and targets based on the attributed conversion data.</p>
+            <p>If you are using <b>Google Ads Smart Bidding</b>, the auto-bidder will automatically optimize based on your selected attribution model. If you change your model, all you need to do is to <b>make sure your CPA / ROAS targets and budgets are set correctly</b>.</p>
+            <p>If you set bids manually or use a bid management tool, update your bids, bid modifiers and targets to take into account the performance of your ads across devices. The conversion data in Google Ads and the insights from the Cross-Device Activity reports will help you.</p>
+            <h5><a href="https://goo.gl/BAcNMs" target="_blank">3. Automate your Conversion based bidding. Adopt Google Ads Smart Bidding</a></h5>
+            <h5><a href="https://goo.gl/h1ZECS" target="_blank">4. Update Bids, Budgets and Targets based on attributed conversion data</a></h5>
+          </td>
+        </tr>
+        </table>    
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+</body>
+<script>
+var data = {};
+var totalConversions, crossDeviceConvBasedOnImpr, historyWindow,
+  dateRange, conversionAction, crossDeviceConvBasedOnClicks,
+  averageClickPathLength, averageImprPathLength, uniqueCrossDeviceClickPaths,
+  uniqueCrossDeviceImprPaths, mobileLastClickConv, tabletLastClickConv, 
+  desktopLastClickConv, desktopAssistRatio, mobileAssistRatio, models,
+  pathsContaining, pathsCombs, language, notEndingOnSameDevice, 
+  notEndsWithButContains, mobileSubheading, roleOfMobile, roleOfMobileSub, 
+  totalConversionValue, crossDeviceConvValue, nonCrossDevConvValue, 
+  convValueRatio, s2trHeading, s2trMain, s2trFooter, attributionHeadline, 
+  keyMobileTouchpoint;
+
+  function handleFileSelect(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    
+
+    var files = evt.originalEvent.dataTransfer.files; // FileList object.
+
+    // Load Data
+    for (var i = 0, f; f = files[i]; i++) {
+      
+      if (!f.type.match('text/csv') || files.length != 4) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      reader.onloadend = function(theFile) {
+        if (theFile.target.readyState == FileReader.DONE) {          
+          var csvData = readCsv(theFile.target.result.slice(0, 
+                                theFile.target.result.length-1));
+          var reportType = determineReportType(csvData);
+
+          language = determineLanguage(csvData);
+
+          csvData = csvData.slice(0,9).concat(languageAdjustment(csvData.slice(9), language));
+
+          if (data[reportType + ' Clicks']) {
+            if(isClickInteraction(csvData, 
+              data[reportType + ' Clicks']['header'].concat(
+              data[reportType + ' Clicks']['body']), reportType)) {
+              data[reportType + ' Impressions'] = data[reportType + ' Clicks']
+              data[reportType + ' Clicks'] = { header: csvData.slice(0,8), 
+                                               body: csvData.slice(9)}
+            }
+            else {
+              data[reportType + ' Impressions'] = { header: csvData.slice(0,8), 
+                                                    body: csvData.slice(9)}
+            }
+          }
+          else {
+            data[reportType + ' Clicks'] = { header: csvData.slice(0,8), 
+                                             body: csvData.slice(9)}
+          }
+        }
+      }
+      reader.readAsText(f)
+    }
+    // Load Data End
+
+    function waitForElement(){
+      if(typeof data['Device Paths Clicks'] !== "undefined"){
+
+        calculateBasics();
+        chartCreation();
+        updateNumbers();
+        $('.graph_utils').show();
+        $('.dropzone-row').hide();
+      }
+      else{
+          setTimeout(function(){
+              waitForElement();
+          },250);
+      }
+    }
+    waitForElement();
+  }
+
+  function handleDragOver(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.originalEvent.dataTransfer.dropEffect = 'copy';
+  }
+
+  // Setup the dnd listeners.
+  var dropZone = $('#drop_zone');
+  $(window).on('dragover', function (evt) { handleDragOver(evt); });
+  // document.getElementById('drop_zone').addEventListener('drop', console.log, false);
+  $(window).on('drop', function (evt) { handleFileSelect(evt); });
+  // dropZone.addEventListener('drop', handleFileSelect, false);
+</script>
+<script src="js/charts/main.js"></script>
+<script src="js/beta/updateNumbers.js"></script>
+</html>

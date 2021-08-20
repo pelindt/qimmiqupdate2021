@@ -1,0 +1,118 @@
+@media print{@page {size: landscape}}
+
+#drop_zone {
+	min-width: 300pt;
+	height: 200pt;
+  	line-height: 200pt; /* <-- this is what you must define */
+  	vertical-align: middle;
+  	text-align: center;
+	border: 2pt dashed rgb(187, 187, 187);
+	color: rgb(187, 187, 187);
+}
+
+body {
+	padding: 0pt 10pt 0pt 10pt;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size:28pt;
+}
+
+h5 {
+	font-size: 22pt;
+	color: rgba(60, 120, 216, 1) !important;
+	font-weight: bold;
+}
+
+/*.slide-divider {
+	margin: 30pt 0pt 30pt 0pt;
+	border-top: 1pt dashed rgb(187, 187, 187);
+	border-bottom: 1pt dashed rgb(187, 187, 187);
+}*/
+
+.main_ratio {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.wrapper_ratio {
+  margin-left: 10%;
+  width: 80%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+}
+
+.wrapper_ratio:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.slide-content {
+  height: 535pt;
+  width: 824pt;
+  border-top: 1pt dashed rgb(187, 187, 187) !important;
+  border-bottom: 1pt dashed rgb(187, 187, 187) !important;
+  margin: 30pt auto 30pt auto;
+  padding: 10pt 0pt 10pt 0pt;
+}
+
+.graph_utils {
+  display:none;
+}
+
+.left-graph {
+  width: 35%;
+}
+
+.right-text {
+  width: 65%;
+  padding-left: 15pt;
+}
+
+.left-text-text {
+  width: 50%;
+}
+
+.right-text-text {
+  width: 50%;
+  padding-left: 15pt;
+}
+
+.top-graph {
+  height: 150pt;
+}
+
+.top-align {
+    vertical-align: top;
+    padding-top: 10pt;
+}
+
+a:link, a:active, a:hover, a:visited {
+  color: rgba(60, 120, 216, 1) !important;
+}
+
+.key-num {
+  color: rgba(60, 120, 216, 1) !important;
+  font-weight: 700;
+  font-size: 36pt;
+  padding: 20pt 10pt 20pt 20pt;
+  white-space:nowrap;
+}
+
+.key-text {
+  font-size: 16pt;
+  font-weight: 700;
+  padding: 20pt 20pt 20pt 10pt;
+}
+
+table tr, table tr {
+  page-break-inside: avoid;
+}
